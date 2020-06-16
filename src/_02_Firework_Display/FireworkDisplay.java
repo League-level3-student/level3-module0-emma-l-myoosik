@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+@SuppressWarnings("serial")
 public class FireworkDisplay extends JPanel implements ActionListener {
 	public static int WIDTH = 720;
 	public static int HEIGHT = 480;
@@ -34,7 +35,9 @@ public class FireworkDisplay extends JPanel implements ActionListener {
 		window.add(this, BorderLayout.CENTER);
 		
 		WIDTH = Toolkit.getDefaultToolkit().getScreenSize().width;
+		System.out.println(WIDTH);
 		HEIGHT = Toolkit.getDefaultToolkit().getScreenSize().height;
+		System.out.println(HEIGHT);
 		setPreferredSize(new Dimension(WIDTH, HEIGHT));
 		
 		buttonPanel = new JPanel();

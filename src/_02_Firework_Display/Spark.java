@@ -1,7 +1,7 @@
 package _02_Firework_Display;
 
 import java.awt.Color;
-import java.awt.Graphics;
+//import java.awt.Graphics;
 import java.util.Random;
 
 public class Spark {
